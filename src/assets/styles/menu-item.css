@@ -1,0 +1,14 @@
+.menu-item {
+  position: relative;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.menu-item img {
+  width: 40px;
+}
+
+.menu-item.selected,
+.menu-item:hover {
+  background: #fff4;
+}

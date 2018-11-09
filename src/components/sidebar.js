@@ -1,36 +1,57 @@
 import React from 'react';
-import '../assets/styles/side-bar.css';
+import PropTypes from 'prop-types';
+import MenuItem from './menu-item';
 import LogoIcon from '../assets/images/logo_outline.png';
 import ConversationIcon from '../assets/images/ico_conversation_png.png';
 import MyListIcon from '../assets/images/ico_mylist_png.png';
 import ProfileIcon from '../assets/images/ico_profile_png.png';
 import CogIcon from '../assets/images/cog.png';
 import LogoutIcon from '../assets/images/logout.png';
+import { noop } from '../utils';
+import '../assets/styles/side-bar.css';
 
-const Sidebar = ({
-  selectedMenu
-}) =>
+const Sidebar = ({ selectedMenu, menuClick }) =>
   <div className="side-bar">
     <div className="logo">
       <div className="bg" />
-      <img className src={LogoIcon} alt=""/>
+      <img src={LogoIcon} alt=""/>
     </div>
-    <div className="menuitem">
-      <img src={ConversationIcon} alt=""/>
-    </div>
-    <div className="menuitem">
-      <img src={MyListIcon} alt=""/>
-    </div>
-    <div className="menuitem">
-      <img src={ProfileIcon} alt=""/>
-    </div>
-    <div className="menuitem selected">
-      <img src={CogIcon} alt=""/>
-    </div>
+
+    <MenuItem
+      icon={ConversationIcon}
+      selected={selectedMenu === 'conversation'}
+      handleClick={() => menuClick('conversation')}
+    />
+    <MenuItem
+      icon={MyListIcon}
+      selected={selectedMenu === 'mylist'}
+      handleClick={() => menuClick('mylist')}
+    />
+    <MenuItem
+      icon={ProfileIcon}
+      selected={selectedMenu === 'profile'}
+      handleClick={() => menuClick('profile')}
+    />
+    <MenuItem
+      icon={CogIcon}
+      selected={selectedMenu === 'settings'}
+      handleClick={() => menuClick('settings')}
+    />
     <div className="spacer"/>
-    <div className="menuitem">
-      <img src={LogoutIcon} alt=""/>
-    </div>
+    <MenuItem
+      icon={LogoutIcon}
+      handleClick={() => menuClick('logout')}
+    />
   </div>
+
+Sidebar.propTypes = {
+  selectedMenu: PropTypes.string,
+  menuClick: PropTypes.func
+};
+
+Sidebar.defaultProps = {
+  selectedMenu: '',
+  menuClick: noop
+};
 
 export default Sidebar;

@@ -5,25 +5,13 @@
   flex: none;
   flex-direction: column;
   background: #4aafb7;
+  z-index: 9999;
+  position: fixed;
 }
 
-.side-bar .logo,
-.side-bar .menuitem {
+.side-bar .logo {
   position: relative;
   padding: 20px;
-}
-
-.side-bar .menuitem img {
-  width: 40px;
-}
-
-.side-bar .menuitem {
-  cursor: pointer;
-}
-
-.side-bar .menuitem.selected,
-.side-bar .menuitem:hover {
-  background: #fff4;
 }
 
 .side-bar .logo .bg {

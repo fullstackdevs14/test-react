@@ -1,0 +1,91 @@
+.side-panel {
+  position: relative;
+  padding-left: 80px;
+  width: 380px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+}
+
+.side-panel .panel-header {
+  display: flex;
+  background-color: #aaa;
+  color: white;
+  padding: 24px;
+  font-family: 'Gotham-Medium';
+}
+
+.side-panel .panel-header .close-icon {
+  height: 26px;
+  margin-right: 18px;
+  cursor: pointer;
+}
+
+.side-panel .panel-header .title {
+  margin-top: 18px;
+  font-size: 16px;
+}
+
+.side-panel .panel-section-header {
+  background-color: #eaeae9;
+  color: #546566;
+  font-size: 14px;
+  padding: 17px 10px 19px;
+  text-transform: capitalize;
+  font-family: 'Gotham-Medium';
+  padding-top: 27px;
+}
+
+.side-panel .section {
+  padding-left: 40px;
+}
+
+.side-panel .panel-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.side-panel .panel-item .title {
+  font-family: 'Gotham-Medium';
+  padding: 37px 0 33px;
+}
+
+.side-panel .panel-item .switch {
+  margin-bottom: 8px;
+  margin-right: 12px;
+}
+
+.side-panel .panel-item .switch .react-switch-bg {
+  box-sizing: border-box;
+}
+
+.side-panel .panel-item .switch .react-switch-handle {
+  box-sizing: border-box;
+}
+
+.side-panel .panel-item .switch.green .react-switch-bg {
+  border: 2px solid #afd9d6;
+}
+
+.side-panel .panel-item .switch.green .react-switch-handle {
+  border: 2px solid #5db0b7 !important;
+  background: #badedc !important;
+  background: -moz-linear-gradient(top, #badedc 0%, #72b9c0 100%) !important;
+  background: -webkit-linear-gradient(top, #badedc 0%,#72b9c0 100%) !important;
+  background: linear-gradient(to bottom, #badedc 0%,#72b9c0 100%) !important;
+}
+
+.side-panel .panel-item .switch.red .react-switch-bg {
+  border: 2px solid #f8c1c1;
+}
+
+.side-panel .panel-item .switch.red .react-switch-handle {
+  border: 2px solid #c46b66 !important;
+  background: #fad1d1 !important;
+  background: -moz-linear-gradient(top, #fad1d1 0%, #d49491 100%) !important;
+  background: -webkit-linear-gradient(top, #fad1d1 0%,#d49491 100%) !important;
+  background: linear-gradient(to bottom, #fad1d1 0%,#d49491 100%) !important;
+}
