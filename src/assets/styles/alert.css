@@ -1,0 +1,128 @@
+.alert-container {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+.alert {
+  background: #ebebeb;
+  color: #4e4b4c;
+  border-radius: 5px;
+  width: 400px;
+  height: 80px;
+  display: flex;
+  font-family: 'Gotham-Medium';
+  transition: right .5s ease;
+  margin-bottom: 16px;
+}
+
+.alert .left {
+  padding: 12px;
+  flex: 1;
+  display: flex;
+  overflow: hidden;
+}
+
+.alert .left .message-block {
+  overflow: hidden;
+}
+
+.alert .logo {
+  margin-right: 8px;
+}
+
+.alert .logo img {
+  height: 100%;
+}
+
+.alert .title {
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alert .subtitle {
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.alert .message {
+  font-family: 'Gotham-Book';
+  font-size: 14px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  line-height: 1.5;
+  margin-top: 0.25em;
+}
+
+.alert .right {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  border-left: 1px solid #ccc;
+}
+
+.alert .right .alert-button {
+  flex: 1;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  cursor: pointer;
+  user-select: none;
+  background: transparent;
+  font-family: 'Gotham-Medium';
+  font-size: 14px;
+  color: #4e4b4c;
+  outline: none;
+}
+
+.alert .right .alert-button.top {
+  border-top-right-radius: 5px;
+}
+
+.alert .right .alert-button.bottom {
+  border-bottom-right-radius: 5px;
+  border-bottom: none;
+}
+
+.alert .right .alert-button:active {
+  background: #e5e5e5;
+  -webkit-box-shadow: none;
+     -moz-box-shadow: none;
+          box-shadow: none;
+   outline: none;
+}
+
+.alert .right .alert-button.pressed {
+  color: #4e4b4c;
+}
+
+.alert .right .button:last-child {
+  border-bottom: none;
+}
+
+.slideIn-enter {
+  transform: translateX(420px);
+}
+
+.slideIn-enter.slideIn-enter-active {
+  transform: translateX(0);
+  transition: transform .5s ease;
+}
+
+.slideIn-leave {
+  transform: translateX(0);
+}
+
+.slideIn-leave.slideIn-leave-active {
+  transform: translateX(420px);
+  transition: transform .5s ease;
+}
+

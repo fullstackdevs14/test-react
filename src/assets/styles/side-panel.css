@@ -7,6 +7,13 @@
   flex-direction: column;
   background-color: #fff;
   box-shadow: 0 0 5px 0 rgba(0,0,0,.1);
+  overflow-y: auto;
+  margin-left: -380px;
+  transition: margin-left .5s ease;
+}
+
+.side-panel.open {
+  margin-left: 0;
 }
 
 .side-panel .panel-header {
@@ -15,6 +22,8 @@
   color: white;
   padding: 24px;
   font-family: 'Gotham-Medium';
+  flex: none;
+  align-items: center;
 }
 
 .side-panel .panel-header .close-icon {
@@ -24,7 +33,6 @@
 }
 
 .side-panel .panel-header .title {
-  margin-top: 18px;
   font-size: 16px;
 }
 
@@ -32,10 +40,9 @@
   background-color: #eaeae9;
   color: #546566;
   font-size: 14px;
-  padding: 17px 10px 19px;
-  text-transform: capitalize;
+  text-transform: uppercase;
   font-family: 'Gotham-Medium';
-  padding-top: 27px;
+  padding: 15px 10px;
 }
 
 .side-panel .section {
@@ -49,8 +56,9 @@
 }
 
 .side-panel .panel-item .title {
-  font-family: 'Gotham-Medium';
-  padding: 37px 0 33px;
+  font-family: 'Gotham-Book';
+  padding: 35px 0;
+  color: #4d4d4d;
 }
 
 .side-panel .panel-item .switch {
@@ -88,4 +96,9 @@
   background: -moz-linear-gradient(top, #fad1d1 0%, #d49491 100%) !important;
   background: -webkit-linear-gradient(top, #fad1d1 0%,#d49491 100%) !important;
   background: linear-gradient(to bottom, #fad1d1 0%,#d49491 100%) !important;
+}
+
+.side-panel .section .divider {
+  height: 2px;
+  background: rgba(48,48,48,.15);
 }
