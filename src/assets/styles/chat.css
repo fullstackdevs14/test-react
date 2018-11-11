@@ -1,5 +1,6 @@
 .chat {
   flex: 1;
+  overflow: auto;
 }
 .chat-header {
   background: #5cafb5;

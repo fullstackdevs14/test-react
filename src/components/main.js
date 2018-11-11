@@ -27,7 +27,7 @@ class Main extends Component {
           transitionLeaveTimeout={500}
         >
           {sidepanel &&
-            <div className="bg-overlay"/>
+            <div className="bg-overlay" onClick={this.toggleSidepanel}/>
           }
         </ReactCSSTransitionGroup>
         <SidePanel
