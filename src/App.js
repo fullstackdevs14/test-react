@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Provider } from 'react-redux';
 import Sidebar from './components/sidebar';
 import Main from './components/main';
+import Chat from './components/chat';
 import AlertContainer from './components/alert-container';
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
 import './assets/styles/App.css';
@@ -19,6 +20,9 @@ class App extends Component {
     switch(menu) {
       case 'settings':
         store.dispatch(toggleSidepanel())
+        break;
+      case 'conversation':
+        this.showAlert();
         break;
       default:
         console.log(menu);
@@ -49,8 +53,7 @@ class App extends Component {
             menuClick={this.handleMenuClick}
           />
           <Main>
-            <p>Content</p>
-            <button onClick={this.showAlert}>Show Alert</button>
+            <Chat />
           </Main>
           <AlertContainer />
         </div>

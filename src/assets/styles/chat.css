@@ -1,0 +1,67 @@
+.chat {
+  flex: 1;
+}
+.chat-header {
+  background: #5cafb5;
+  color: white;
+  font-family: 'Gotham-Medium';
+  font-size: 16px;
+  padding: 27px 32px 28px;
+}
+.chat-title {
+  font-family: 'Gotham-Bold';
+  font-size: 11px;
+  padding: 16px;
+  text-align: center;
+  color: #546566;
+}
+.content {
+  flex: 1;
+  padding: 16px;
+}
+.acceptance .title {
+  font-family: 'Gotham-Medium';
+  margin-bottom: 15px;
+}
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-none {
+  flex: none;
+}
+.italic {
+  font-style: italic;
+}
+.icon-small {
+  width: 16px;
+  height: 18px;
+  margin-right: 12px;
+  object-fit: contain;
+}
+.mb16 {
+  margin-bottom: 16px;
+}
+.accept-button {
+  background-color: #f57e7b;
+  color: #fff;
+  padding: 8px 38px;
+  border-radius: 10px;
+  font-family: 'Giro-Light';
+  font-size: 20px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+.accept-button:active {
+  background-color: #dc726f;
+}
+.date {
+  font-family: 'Gotham-Medium';
+  font-size: 11px;
+  margin-bottom: 18px;
+  color: #aaa;
+  text-align: center;
+}

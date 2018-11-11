@@ -1,0 +1,74 @@
+
+.message {
+  display: flex;
+  font-family: 'Gotham-Book';
+  color: #546566;
+  font-size: 13px;
+  margin-bottom: 16px;
+}
+.message .msg-content {
+  margin-left: 8px;
+}
+.message .bubble {
+  border: 30px solid transparent;
+  position: relative;
+}
+.message .bubble .shadow {
+  width: 100%;
+  height: 100%;;
+  position: absolute;
+  left: -34px;
+  top: -27px;
+  border: 30px solid transparent;
+  border-image: url("/speech_bubble_shadow.png") 32 29 stretch;
+  z-index: -1;
+}
+.message .blue .bubble-content {
+  background: #ecf2f2;
+}
+.message .bubble.grey {
+  border-image: url("/speech_bubble_grey_left.png") 30 stretch;
+}
+.message .bubble.blue {
+  border-image: url("/speech_bubble_blue_left.png") 30 stretch;
+}
+.message.right {
+  justify-content: flex-end;
+}
+.message.right .msg-content {
+  margin-right: 8px;
+}
+.message.right .bubble.grey {
+  border-image: url("/speech_bubble_grey_right.png") 30 stretch;
+}
+.message.right .bubble.blue {
+  border-image: url("/speech_bubble_blue_right.png") 30 stretch;
+}
+.message .grey .bubble-content {
+  background: rgba(230,230,230);
+}
+.message-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.message-meta .sender {
+  font-family: 'Gotham-Bold';
+  font-size: 11px;
+}
+.message-meta .time {
+  font-family: 'Gotham-Book';
+  font-size: 11px;
+}
+.msg-content {
+  max-width: 80%;
+}
+.avatar {
+  flex: none;
+  display: flex;
+  align-items: flex-end;
+}
+.avatar img {
+  width: 30px;
+  transform: translateY(10px);
+}

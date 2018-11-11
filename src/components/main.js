@@ -34,9 +34,7 @@ class Main extends Component {
           open={sidepanel}
           onClose={this.toggleSidepanel}
         />
-        <div className="content">
-          {this.props.children}
-        </div>
+        {this.props.children}
       </div>
     )
   }
