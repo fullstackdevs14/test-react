@@ -4,7 +4,6 @@ import Sidebar from './components/sidebar';
 import Main from './components/main';
 import Chat from './components/chat';
 import AlertContainer from './components/alert-container';
-import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
 import './assets/styles/App.css';
 import createStore from './store/init'
 import { toggleSidepanel, addAlert } from './store/actions';
